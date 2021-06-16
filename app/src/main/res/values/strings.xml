@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CovidTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="world_data">World Data</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/backgroundbox"
+    app:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/statewise_grid_layout"
+        android:layout_height="match_parent">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="5"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:id="@+id/grid_layout_statewise"
+                android:rowCount="1">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1.5"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#21FFC110"
+                    android:layout_marginRight="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="State"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/statewise_grid_name_textView"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="8dp"
+                        android:gravity="start"
+                        android:layout_height="60dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/confirmed_card"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/statewise_grid_confirmed_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="Total"
+                            android:textColor="#e600e6"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:id="@+id/statewise_grid_new_confirmed_textView"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/active_card"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statewise_grid_active_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                          android:layout_marginBottom="20dp"
+                            android:text="Active"
+
+                            android:textColor="@color/blue_pie"
+                            android:textSize="14sp" />
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/recovered_card"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statewise_grid_recovered_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Recover"
+                            android:textColor="@color/green_pie"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/statewise_grid_new_recovered_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/death_card"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/statewise_grid_death_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="@color/red"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/new_death_statewise_grid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

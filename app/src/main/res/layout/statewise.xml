@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorPrimary"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/layout_state_wise_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/backgroundbox"
+        android:weightSum="5">
+
+
+        <TextView
+            android:id="@+id/statewise_layout_name_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:lines="1"
+            android:text="test"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+            android:id="@+id/statewise_layout_confirmed_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Total"
+
+            android:textColor="@color/pink"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/statewise_layout_active_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="Active"
+
+            android:textColor="@color/orange"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/statewise_layout_recoverd_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:lines="1"
+            android:text="Recover"
+
+            android:textColor="@color/purple_700"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/statewise_layout_death_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:lines="1"
+            android:text="Death"
+
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
